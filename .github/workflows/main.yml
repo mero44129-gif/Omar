@@ -16,10 +16,6 @@ jobs:
         with:
           node-version: "20"
       - run: rm -f package-lock.json
-      - name: Fix image paths
-        run: |
-          find . -type f \( -name "*.json" -o -name "*.ts" -o -name "*.tsx" \) -not -path "./node_modules/*" -not -path "./.git/*" -exec sed -i 's|/Omar/assets/|/assets/|g' {} \;
-          find . -type f \( -name "*.json" -o -name "*.ts" -o -name "*.tsx" \) -not -path "./node_modules/*" -not -path "./.git/*" -exec sed -i 's|/assets/|/Omar/assets/|g' {} \;
       - run: npm install --legacy-peer-deps
       - run: npm run build
       - uses: actions/configure-pages@v5
