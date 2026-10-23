@@ -1,0 +1,6 @@
+{
+  "name": "Coach Omar Elgafary - Premium Online Fitness Coaching",
+  "description": "Official bilingual fitness coaching platform for Coach Omar Elgafary. Customized workout routines, personalized nutrition plans, and online coaching for Egypt and worldwide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

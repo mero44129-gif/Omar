@@ -1,0 +1,240 @@
+export const translations = {
+  en: {
+    nav: {
+      home: 'Home',
+      about: 'About Omar',
+      services: 'Services',
+      transformations: 'Transformations',
+      education: 'Content & Socials',
+      contact: 'Book via WhatsApp',
+      admin: 'Admin Portal',
+      cta: 'Start Transformation'
+    },
+    hero: {
+      ctaPrimary: 'Start Your Transformation',
+      ctaSecondary: 'Explore Services',
+      chatWhatsApp: 'Direct WhatsApp Chat',
+      metric1Label: 'Coaching Format',
+      metric1Val: '100% Online',
+      metric2Label: 'Protocols',
+      metric2Val: 'Science-Based',
+      metric3Label: 'Coverage',
+      metric3Val: 'Egypt & Worldwide'
+    },
+    about: {
+      kicker: 'Verified Coach Profile',
+      principlesTitle: 'Core Coaching Principles'
+    },
+    services: {
+      kicker: 'Tailored Programs',
+      heading: 'Coaching Services & Specializations',
+      subheading: 'Structured resistance protocols and precision nutrition tailored to your lifestyle, schedule, and equipment.',
+      inquireWhatsApp: 'Inquire on WhatsApp',
+      priceNotice: 'Customized pricing based on coaching duration and requirements.',
+      includedFeatures: 'What is included:'
+    },
+    gallery: {
+      kicker: 'Real Results',
+      heading: 'Verified Client Transformations',
+      subheading: 'Documented physique progression from structured resistance training and consistent nutritional adherence. Real photos, zero fabrication.',
+      clickToEnlarge: 'Click to view full image',
+      closeLightbox: 'Close preview'
+    },
+    education: {
+      kicker: 'Knowledge & Media',
+      heading: 'Educational Content & Social Channels',
+      subheading: 'Follow Coach Omar across verified social platforms for training science, exercise mechanics, and nutritional advice.',
+      youtubeDesc: 'Video tutorials, workout breakdowns, and evidence-based training discussions on YouTube.',
+      tiktokDesc: 'Quick training tips, technique pointers, and fitness concepts.',
+      linkedinDesc: 'Professional fitness coaching updates and industry background.',
+      visitChannel: 'Visit Channel',
+      viewProfile: 'View Profile',
+      officialHandles: 'Verified Official Accounts Only'
+    },
+    contact: {
+      kicker: 'Direct Consultation',
+      heading: 'Start Your Coaching Journey',
+      subheading: 'Inquire directly on WhatsApp with Coach Omar Elgafary or generate a customized inquiry message below.',
+      whatsAppNumber: 'Official WhatsApp',
+      whatsAppHelp: 'Direct communication with Coach Omar. Inquiries answered within 24 hours.',
+      openWhatsAppNow: 'Open WhatsApp Chat',
+      builderTitle: 'Customize Your WhatsApp Inquiry',
+      builderSubtitle: 'Preview and generate your message before opening WhatsApp',
+      yourName: 'Your Full Name',
+      namePlaceholder: 'e.g. Mostafa Mahmoud',
+      phone: 'Phone Number (with Country Code)',
+      phonePlaceholder: 'e.g. +20 100 123 4567',
+      selectService: 'Target Service',
+      chooseService: 'Select a program...',
+      goal: 'Primary Fitness Goal',
+      goalPlaceholder: 'e.g. Fat loss, Lean muscle building, Recomposition',
+      level: 'Current Experience Level',
+      levelBeginner: 'Beginner (< 1 year)',
+      levelIntermediate: 'Intermediate (1–3 years)',
+      levelAdvanced: 'Advanced (3+ years)',
+      notes: 'Additional Notes or Medical History',
+      notesPlaceholder: 'Any past injuries, training days available, or specific equipment...',
+      livePreview: 'Live WhatsApp Message Preview',
+      sendWhatsAppDirect: 'Send via WhatsApp Now',
+      copyMessage: 'Copy Text',
+      copied: 'Copied to clipboard!'
+    },
+    footer: {
+      rights: 'All rights reserved.',
+      quickLinks: 'Quick Links',
+      legalDisclaimer: 'Medical & Coaching Disclaimer',
+      privacyNotice: 'Client Confidentiality Policy',
+      onlineOnly: 'Coaching is conducted 100% online remotely. No physical gym facility.'
+    },
+    admin: {
+      title: 'Coach Omar Elgafary · Admin Dashboard',
+      subtitle: 'Manage bilingual website content, services, gallery, and contact information.',
+      loginTitle: 'Administrator Authentication',
+      loginSubtitle: 'Enter administrator credentials to access the management portal.',
+      passwordPlaceholder: 'Enter administrator password',
+      loginButton: 'Sign In to Dashboard',
+      logoutButton: 'Log Out',
+      setupNoticeTitle: 'Authentication & Security Notice',
+      setupNoticeDesc: 'Firebase Authentication is currently pending setup in environment variables. You are operating in local administrator mode. Changes made will persist to the backend data store.',
+      firebaseGuideBtn: 'View Firebase Setup Guide',
+      tabs: {
+        general: 'Hero & Bio',
+        services: 'Services (4)',
+        gallery: 'Transformations',
+        contact: 'WhatsApp & Socials',
+        footer: 'Legal & Footer',
+        inquiries: 'Inquiries',
+        setup: 'Firebase Setup Guide'
+      },
+      saveChanges: 'Save Changes Persistently',
+      saving: 'Saving updates...',
+      savedSuccess: 'Changes saved successfully to database!',
+      saveError: 'Failed to save changes. Please check console.',
+      previewSite: 'Preview Public Site',
+      addNewService: 'Add New Service',
+      addNewGalleryItem: 'Add Transformation Photo',
+      deleteItem: 'Delete',
+      uploadImage: 'Upload Photo',
+      uploading: 'Uploading...'
+    }
+  },
+  ar: {
+    nav: {
+      home: 'الرئيسية',
+      about: 'عن الكوتش',
+      services: 'الخدمات',
+      transformations: 'قصص التحول',
+      education: 'المحتوى والمنصات',
+      contact: 'حجز واتساب',
+      admin: 'لوحة التحكم',
+      cta: 'ابدأ رحلتك الآن'
+    },
+    hero: {
+      ctaPrimary: 'ابدأ رحلتك الآن',
+      ctaSecondary: 'اكتشف الخدمات',
+      chatWhatsApp: 'محادثة مباشرة واتساب',
+      metric1Label: 'طريقة التدريب',
+      metric1Val: 'أونلاين 100%',
+      metric2Label: 'البروتوكولات',
+      metric2Val: 'مبنية علمياً',
+      metric3Label: 'نطاق الخدمة',
+      metric3Val: 'مصر وحول العالم'
+    },
+    about: {
+      kicker: 'الملف التعريفي الموثق',
+      principlesTitle: 'أهم ركائز التدريب مع كوتش عمر'
+    },
+    services: {
+      kicker: 'برامج مخصصة',
+      heading: 'خدمات وبرامج التدريب',
+      subheading: 'برامج تدريبية وتغذية محسوبة بدقة لتناسب وقتك وروتين حياتك وإمكانيات الجيم أو المنزل.',
+      inquireWhatsApp: 'استفسر عبر الواتساب',
+      priceNotice: 'الأسعار تُحدد بناءً على مدة الاشتراك والمتطلبات الفردية.',
+      includedFeatures: 'ما يتضمنه البرنامج:'
+    },
+    gallery: {
+      kicker: 'نتائج حقيقية',
+      heading: 'تطورات المشتركين الموثقة',
+      subheading: 'تطورات بدنية حقيقية موثقة ناتجة عن التزام بالتمارين والتغذية السليمة. صور أصلية بدون أي تزييف.',
+      clickToEnlarge: 'اضغط لتكبير الصورة',
+      closeLightbox: 'إغلاق المعاينة'
+    },
+    education: {
+      kicker: 'المعرفة والمحتوى',
+      heading: 'المحتوى التعليمي والمنصات الرسمية',
+      subheading: 'تابع كوتش عمر على المنصات الرسمية المعتمدة للحصول على نصائح التكنيك وتطوير الأداء الرياضي.',
+      youtubeDesc: 'فيديوهات وشروحات تدريبية مفصلة وتكنيكات التمارين على يوتيوب.',
+      tiktokDesc: 'نصائح تدريبية سريعة ومفاهيم لياقة بدنية مبسطة على تيك توك.',
+      linkedinDesc: 'الملف المهني الرسمي والتحديثات الرياضية على لينكد إن.',
+      visitChannel: 'زيارة القناة',
+      viewProfile: 'عرض الحساب',
+      officialHandles: 'الحسابات الرسمية المعتمدة فقط'
+    },
+    contact: {
+      kicker: 'تواصل مباشر',
+      heading: 'ابدأ اشتراكك مع كوتش عمر',
+      subheading: 'تواصل مباشرة عبر الواتساب مع كوتش عمر الجعفري أو خصص رسالة استفسارك عبر النموذج التالي.',
+      whatsAppNumber: 'رقم الواتساب الرسمي',
+      whatsAppHelp: 'تواصل مباشر مع كوتش عمر، يتم الرد على الاستفسارات خلال 24 ساعة.',
+      openWhatsAppNow: 'فتح محادثة الواتساب',
+      builderTitle: 'تجهيز رسالة الواتساب المخصصة',
+      builderSubtitle: 'راجع نص الرسالة قبل فتح تطبيق الواتساب مباشرة',
+      yourName: 'الاسم بالكامل',
+      namePlaceholder: 'مثال: مصطفى محمود',
+      phone: 'رقم الهاتف (مع كود الدولة)',
+      phonePlaceholder: 'مثال: 01001234567 20+',
+      selectService: 'البرنامج المطلوب',
+      chooseService: 'اختر البرنامج...',
+      goal: 'هدفك البدني الأساسي',
+      goalPlaceholder: 'مثال: تنشيف وخسارة دهون، زيادة عضلية، تحسين لياقة',
+      level: 'المستوى الحالي في الجيم',
+      levelBeginner: 'مبتدئ (أقل من سنة)',
+      levelIntermediate: 'متوسط (1–3 سنوات)',
+      levelAdvanced: 'متقدم (أكثر من 3 سنوات)',
+      notes: 'ملاحظات إضافية أو تاريخ إصابات',
+      notesPlaceholder: 'أي تفاصيل عن أيام التمرين المتاحة أو الإصابات السابقة...',
+      livePreview: 'معاينة نص الرسالة للواتساب',
+      sendWhatsAppDirect: 'إرسال الرسالة عبر واتساب الآن',
+      copyMessage: 'نسخ النص',
+      copied: 'تم النسخ بنجاح!'
+    },
+    footer: {
+      rights: 'جميع الحقوق محفوظة.',
+      quickLinks: 'روابط سريعة',
+      legalDisclaimer: 'إخلاء المسؤولية الرياضي والطبي',
+      privacyNotice: 'ميثاق خصوصية المشتركين',
+      onlineOnly: 'كافة خدمات التدريب تتم أونلاين عن بعد. لا يوجد مقر جيم فعلي.'
+    },
+    admin: {
+      title: 'كوتش عمر الجعفري · لوحة التحكم الإدارية',
+      subtitle: 'إدارة محتوى الموقع بالعربية والإنجليزية والخدمات والمعرض وأرقام التواصل.',
+      loginTitle: 'تسجيل دخول الإدارة',
+      loginSubtitle: 'أدخل كلمة مرور المسؤول للوصول إلى لوحة التحكم.',
+      passwordPlaceholder: 'أدخل كلمة المرور',
+      loginButton: 'تسجيل الدخول للوحة التحكم',
+      logoutButton: 'تسجيل الخروج',
+      setupNoticeTitle: 'تنبيه الأمان والإعداد',
+      setupNoticeDesc: 'خدمة Firebase Authentication قيد الإعداد في متغيرات البيئة. تعمل اللوحة حالياً بنظام المسؤول المحلي المحمي، وجميع التعديلات تُحفظ بشكل دائم في قاعدة البيانات.',
+      firebaseGuideBtn: 'دليل تفعيل Firebase',
+      tabs: {
+        general: 'الرئيسية والنبذة',
+        services: 'الخدمات (4)',
+        gallery: 'التحولات والمعرض',
+        contact: 'الواتساب والمنصات',
+        footer: 'الإخلاء والخصوصية',
+        inquiries: 'طلبات الاشتراك',
+        setup: 'دليل ربط Firebase'
+      },
+      saveChanges: 'حفظ التعديلات نهائياً',
+      saving: 'جاري الحفظ...',
+      savedSuccess: 'تم حفظ كافة التعديلات بنجاح!',
+      saveError: 'حدث خطأ أثناء الحفظ، يرجى المحاولة مجدداً.',
+      previewSite: 'معاينة الموقع العام',
+      addNewService: 'إضافة خدمة جديدة',
+      addNewGalleryItem: 'إضافة صورة تحول',
+      deleteItem: 'حذف',
+      uploadImage: 'رفع صورة جديدة',
+      uploading: 'جاري الرفع...'
+    }
+  }
+};
