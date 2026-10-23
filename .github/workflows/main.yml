@@ -17,6 +17,7 @@ jobs:
           node-version: "20"
       - run: rm -f package-lock.json
       - run: npm install --legacy-peer-deps
+      - run: sed -i 's|"/assets/|"/Omar/assets/|g' data/site-content.json
       - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
