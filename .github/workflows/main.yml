@@ -15,10 +15,34 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - run: rm -f package-lock.json
+      - name: Fix all image paths
+        run: |
+          find . -type f \( -name "*.json" -o -name "*.ts" -o -name "*.tsx" -o -name "*.js" \) -not -path "./node_modules/*" -not -path "./.git/*" -exec sed -i 's|/Omar/assets/|/assets/|g' {} \;
+          find . -type f \( -name "*.json" -o -name "*.ts" -o -name "*.tsx" -o -name "*.js" \) -not -path "./node_modules/*" -not -path "./.git/*" -exec sed -i 's|/assets/|/Omar/assets/|g' {} \;
+          cat data/site-content.json | grep aistudio | head -3
+      - name: Fix vite config
+        run: |
+          cat > vite.config.ts << 'EOF'
+          import { defineConfig } from 'vite'
+          import react from '@vitejs/plugin-react'
+          import path from 'path'
+          export default defineConfig({
+            plugins: [react()],
+            base: '/Omar/',
+            resolve: { alias: { '@': path.resolve(__dirname, './src') } },
+          })
+          EOF
+          cat vite.config.ts
       - run: npm install --legacy-peer-deps
-      - run: sed -i 's|"/assets/|"/Omar/assets/|g' data/site-content.json
       - run: npm run build
+      - run: |
+          ls -R dist | grep -i aistudio -A 2 | head -20
+          cp -r public dist/public_copy 2>/dev/null || true
+          cp -rv public/* dist/ 2>/dev/null || true
+          mkdir -p dist/Omar/assets
+          cp -rv dist/assets/* dist/Omar/assets/ 2>/dev/null || true
+          ls dist/Omar/assets/aistudio 2>/dev/null | head -5
+          ls dist/assets/aistudio 2>/dev/null | head -5
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
